@@ -1,0 +1,32 @@
+{
+  "name": "ai-flow",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "enum-widgets": "node scripts/enumerate-widgets.mjs",
+    "smoke": "node scripts/run-smoke.mjs",
+    "debug-designer": "node scripts/debug-designer.mjs"
+  },
+  "dependencies": {
+    "@epic-designer/antd": "1.1.13",
+    "@vueuse/core": "^12.4.0",
+    "ant-design-vue": "^4.2.6",
+    "epic-designer": "1.1.13",
+    "monaco-editor": "^0.52.2",
+    "vue": "^3.5.13",
+    "vue-draggable-plus": "^0.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "playwright-core": "^1.63.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.6",
+    "vite-plugin-monaco-editor": "^1.1.0",
+    "vue-tsc": "^2.1.10"
+  }
+}
